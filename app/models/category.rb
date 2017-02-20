@@ -1,4 +1,5 @@
 class Category < ActiveRecord::Base
+  # Relationships
   has_many :photos
   
   scope :active, where('active = ?', true)
